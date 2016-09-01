@@ -1,0 +1,12 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Bter\bin\Debug\Bter.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Bter\bin\Debug\Bter.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Bter.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Bter.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Eureka.CoinTrade.Api.Bter.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Eureka.CoinTrade.Api.Bter.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Bter.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Bter.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Bter.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Eureka.CoinTrade.Api.Bter.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Eureka.CoinTrade.Api.Bter.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Bter\obj\Debug\Bter.csprojResolveAssemblyReference.cache

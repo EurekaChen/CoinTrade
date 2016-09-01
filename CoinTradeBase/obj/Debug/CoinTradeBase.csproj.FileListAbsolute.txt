@@ -1,0 +1,8 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\bin\Debug\CoinTradeBase.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\bin\Debug\CoinTradeBase.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\bin\Debug\Newtonsoft.Json.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\bin\Debug\Newtonsoft.Json.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\bin\Debug\Newtonsoft.Json.xml
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\obj\Debug\CoinTradeBase.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\obj\Debug\CoinTradeBase.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTradeBase\obj\Debug\CoinTradeBase.csprojResolveAssemblyReference.cache

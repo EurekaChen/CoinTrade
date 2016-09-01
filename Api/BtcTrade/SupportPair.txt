@@ -1,0 +1,5 @@
+﻿{
+"BTCCNY":1,
+"LTCCNY":2,
+"YBCCNY":4
+}

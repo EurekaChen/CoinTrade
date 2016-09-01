@@ -1,0 +1,21 @@
+﻿[
+	"BTCEUR",
+	"BTCUSD",
+	"ANCBTC",
+	"DGCBTC",
+	"DOGEBTC",
+	"DVCBTC",
+	"FRCBTC",
+	"FTCBTC",
+	"I0CBTC",
+	"IXCBTC",
+	"LTCBTC",
+	"NMCBTC",
+	"NVCBTC",
+	"PPCBTC",
+	"QRKBTC",
+	"WDCBTC",
+	"TRCBTC",
+	"XPMBTC"
+	
+]

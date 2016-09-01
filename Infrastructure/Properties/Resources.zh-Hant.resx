@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Expired" xml:space="preserve">
+    <value>軟體過期</value>
+  </data>
+  <data name="ExpiredInfo" xml:space="preserve">
+    <value>您的軟體使用期限已到，到期期為：</value>
+  </data>
+  <data name="MachineCodeNotMatch" xml:space="preserve">
+    <value>機器碼不匹配</value>
+  </data>
+  <data name="MachineCodeNotMatchInfo" xml:space="preserve">
+    <value>您機器碼不與」cointrade.key「不匹配，您的機器碼為:</value>
+  </data>
+  <data name="NoCoinTradeKey" xml:space="preserve">
+    <value>沒有找到授權檔」cointrade.key「,請聯繫service@ee-studio.com獲得授權檔！</value>
+  </data>
+  <data name="YourKeySaved" xml:space="preserve">
+    <value>您的金鑰資訊已經用非文本的形式保存在Api.key中</value>
+  </data>
+  <data name="PriceType_Buy" xml:space="preserve">
+    <value>買一價</value>
+  </data>
+  <data name="PriceType_High" xml:space="preserve">
+    <value>最高價</value>
+  </data>
+  <data name="PriceType_Last" xml:space="preserve">
+    <value>最新價</value>
+  </data>
+  <data name="PriceType_Low" xml:space="preserve">
+    <value>最低價</value>
+  </data>
+  <data name="PriceType_Sell" xml:space="preserve">
+    <value>賣一價</value>
+  </data>
+  <data name="NoLicense" xml:space="preserve">
+    <value>沒有授權</value>
+  </data>
+  <data name="PleaseSelectTradePair" xml:space="preserve">
+    <value>請選擇交易對！</value>
+  </data>
+  <data name="PleaseSelectExchange" xml:space="preserve">
+    <value>請選擇交易所！</value>
+  </data>
+  <data name="PleaseSelectShowColor" xml:space="preserve">
+    <value>請選擇觸發後顯示的顏色！</value>
+  </data>
+  <data name="ResumeAlert" xml:space="preserve">
+    <value>繼續提醒</value>
+  </data>
+  <data name="PauseAlert" xml:space="preserve">
+    <value>暫停提醒</value>
+  </data>
+  <data name="MonitorState_Stop" xml:space="preserve">
+    <value>未監視</value>
+  </data>
+  <data name="MonitorState_Start" xml:space="preserve">
+    <value>開啟監視</value>
+  </data>
+  <data name="MonitorState_Pause" xml:space="preserve">
+    <value>暫停監視</value>
+  </data>
+  <data name="MonitorState_DataError" xml:space="preserve">
+    <value>資料有誤</value>
+  </data>
+  <data name="MonitorState_NotTriggered" xml:space="preserve">
+    <value>監視中未觸發</value>
+  </data>
+  <data name="MonitorState_Triggered" xml:space="preserve">
+    <value>監視中已觸發</value>
+  </data>
+  <data name="PleaseSelectFirstExchange" xml:space="preserve">
+    <value>請選擇需要比較的第一個交易所！</value>
+  </data>
+  <data name="PleaseSelectSecondExchange" xml:space="preserve">
+    <value>請選擇需要比較的第二個交易所！</value>
+  </data>
+  <data name="AtLeastOneExchange" xml:space="preserve">
+    <value>至少選擇一個交易所！</value>
+  </data>
+  <data name="Prompt" xml:space="preserve">
+    <value>提示資訊</value>
+  </data>
+  <data name="WarnInfo" xml:space="preserve">
+    <value>警告資訊</value>
+  </data>
+  <data name="AuthorizeFail" xml:space="preserve">
+    <value>授權失敗</value>
+  </data>
+  <data name="ConfigOption" xml:space="preserve">
+    <value>選項設置</value>
+  </data>
+  <data name="TakeEffectAfterRestart" xml:space="preserve">
+    <value>重啟軟體後設置生效！</value>
+  </data>
+  <data name="YourNeverSelectAnyPairInExchage" xml:space="preserve">
+    <value>您沒有選擇交易所{0}的任何交易對，不能開通該功能：{1}</value>
+  </data>
+  <data name="NoApiKeyCantWork" xml:space="preserve">
+    <value>API金鑰資訊: 您沒有配置交易所「{0}」的金鑰組，不能操作該功能「{1}」！</value>
+  </data>
+  <data name="RateInfoBeginQuery" xml:space="preserve">
+    <value>匯率資訊：開始後臺獲取來自「{0}」的「{1}」匯率資料...</value>
+  </data>
+  <data name="RateInfoQueryFail" xml:space="preserve">
+    <value>匯率資訊: 獲取來自「{0}」的「{1}」的匯率資料失敗！非同步錯誤資訊：{2}</value>
+  </data>
+  <data name="RateInfoQuerySuccess" xml:space="preserve">
+    <value>匯率資訊: 獲取來自「{0}」的「{1}」的匯率資料成功，匯率為{2}</value>
+  </data>
+  <data name="RateInfoQueryException" xml:space="preserve">
+    <value>匯率資訊: 獲取來自「{0}」的「{1}」的匯率資料出現異常，異常資訊為{2}</value>
+  </data>
+  <data name="TradeHistory" xml:space="preserve">
+    <value>歷史成交</value>
+  </data>
+  <data name="Ticker" xml:space="preserve">
+    <value>報價</value>
+  </data>
+  <data name="Quotation" xml:space="preserve">
+    <value>市場深度等</value>
+  </data>
+  <data name="Fund" xml:space="preserve">
+    <value>資金</value>
+  </data>
+  <data name="Fee" xml:space="preserve">
+    <value>費率</value>
+  </data>
+  <data name="BeginDownladDataAsync" xml:space="preserve">
+    <value>{0}資訊：開始後臺獲取來自交易所「{1}」的交易對「{2}」的{0}資訊...</value>
+  </data>
+  <data name="DownloadDataAsyncError" xml:space="preserve">
+    <value>{0}資訊:在後臺獲取來自交易所「{1}」的交易對「{2}」的資料時出現非同步錯誤，非同步錯誤資訊為：{3}。</value>
+  </data>
+  <data name="UpdateDataSuccess" xml:space="preserve">
+    <value>{0}資訊: 成功在後臺獲取來自交易所「{1}」的交易對「{2}」的{0}資訊。</value>
+  </data>
+  <data name="UpdateDataException" xml:space="preserve">
+    <value>{0}資訊：後臺獲取交易所{1}的交易對{2}的{0}時出現異常，異常資訊為：{3}。</value>
+  </data>
+  <data name="QueryDataSuccess" xml:space="preserve">
+    <value>{0}資訊: 成功獲取交易所「{1}」的{0}資訊</value>
+  </data>
+  <data name="QueryDataException" xml:space="preserve">
+    <value>{0}資訊: 獲取交易所「{1}」的{0}時出現異常，異常資訊為：{2}</value>
+  </data>
+  <data name="SubmitOrderSuccess" xml:space="preserve">
+    <value>訂單資訊: 成功提交訂單，訂單號為{1}，來自「{0}」的回饋資訊為：{2}</value>
+  </data>
+  <data name="SumbitOrderFail" xml:space="preserve">
+    <value>訂單資訊: 提交訂單失敗，訂單號{1},來自「{0}」的錯誤資訊為：{2}</value>
+  </data>
+  <data name="SubmitOrderException" xml:space="preserve">
+    <value>訂單資訊: 向交易所{0}提交訂單時發生異常，來自「{0}」的回饋資訊為：{1}</value>
+  </data>
+  <data name="CancelOrderSuccess" xml:space="preserve">
+    <value>取消訂單資訊: 成功取消來自「{0}」的訂單號為「{1}」的訂單。</value>
+  </data>
+  <data name="CancelOrderFail" xml:space="preserve">
+    <value>取消訂單資訊: 取消來自交易所「{0}」的訂單號為「{1}」的訂單失敗，來自「{0}」的錯誤資訊為：{2}</value>
+  </data>
+  <data name="CancelOrderException" xml:space="preserve">
+    <value>取消訂單資訊：取消來自交易所「{0}」的訂單號為「{1}」的訂單時發生異常，異常資訊為:{2}。</value>
+  </data>
+  <data name="NoteNotSupportOpenOrders" xml:space="preserve">
+    <value>(注：該交易所暫不支援獲取訂單清單功能)</value>
+  </data>
+  <data name="OpenOrders" xml:space="preserve">
+    <value>未成交訂單</value>
+  </data>
+  <data name="OrderSuccess" xml:space="preserve">
+    <value>成功提訂單</value>
+  </data>
+  <data name="QueryFund" xml:space="preserve">
+    <value>獲取資金</value>
+  </data>
+  <data name="NoteStatusbar" xml:space="preserve">
+    <value>請注意狀態列資訊，這裡你能看到軟體運行的一些狀態資訊和必要的提示</value>
+  </data>
+  <data name="PairSelected" xml:space="preserve">
+    <value>重新選擇了交易對</value>
+  </data>
+  <data name="ConfigOtherOption" xml:space="preserve">
+    <value>配置了其它選項</value>
+  </data>
+  <data name="PeriodType_AllTime" xml:space="preserve">
+    <value>全部数据</value>
+  </data>
+  <data name="PeriodType_Days10" xml:space="preserve">
+    <value>全部數據</value>
+  </data>
+  <data name="PeriodType_Days2" xml:space="preserve">
+    <value>2天數據</value>
+  </data>
+  <data name="PeriodType_Days5" xml:space="preserve">
+    <value>5天數據</value>
+  </data>
+  <data name="PeriodType_Month1" xml:space="preserve">
+    <value>1個月數據</value>
+  </data>
+  <data name="PeriodType_Months3" xml:space="preserve">
+    <value>3個月數據</value>
+  </data>
+  <data name="PeriodType_Months6" xml:space="preserve">
+    <value>6個月數據</value>
+  </data>
+  <data name="PeriodType_Today" xml:space="preserve">
+    <value>當日數據</value>
+  </data>
+  <data name="PeriodType_YearToDate" xml:space="preserve">
+    <value>本年度數據</value>
+  </data>
+  <data name="NoteChartEx" xml:space="preserve">
+    <value>瀏覽器問題，可能不能正常查盾市場圖表。</value>
+  </data>
+</root>

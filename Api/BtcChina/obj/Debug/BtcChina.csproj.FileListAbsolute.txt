@@ -1,0 +1,12 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcChina\Eureka.CoinTrade.Api.BtcChina.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcChina\Eureka.CoinTrade.Api.BtcChina.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcChina.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcChina.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\Eureka.CoinTrade.Api.BtcChina.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\Eureka.CoinTrade.Api.BtcChina.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\BtcChina.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcChina.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcChina.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\Eureka.CoinTrade.Api.BtcChina.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\Eureka.CoinTrade.Api.BtcChina.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcChina\obj\Debug\BtcChina.csprojResolveAssemblyReference.cache

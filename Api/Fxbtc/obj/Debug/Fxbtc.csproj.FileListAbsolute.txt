@@ -1,0 +1,10 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Fxbtc.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Fxbtc.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Eureka.CoinTrade.Api.Fxbtc.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Eureka.CoinTrade.Api.Fxbtc.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Fxbtc.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Fxbtc.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Fxbtc.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Eureka.CoinTrade.Api.Fxbtc.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Eureka.CoinTrade.Api.Fxbtc.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Fxbtc\obj\Debug\Fxbtc.csprojResolveAssemblyReference.cache

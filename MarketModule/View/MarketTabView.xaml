@@ -1,0 +1,56 @@
+﻿<Metro:MetroTabItem x:Class="Eureka.CoinTrade.MarketModule.View.MarketTabView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.MarketModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:prism="http://www.codeplex.com/prism"
+             xmlns:local="clr-namespace:Eureka.CoinTrade.MarketModule.View"
+             mc:Ignorable="d"               
+             d:DesignHeight="600" d:DesignWidth="600" Header="{Binding MarketTickers.Quote.Code}">
+    <Metro:MetroTabItem.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro.Resources;component/Icons.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatSlider.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+        </ResourceDictionary>
+    </Metro:MetroTabItem.Resources>   
+    <StackPanel>
+        <WrapPanel HorizontalAlignment="Center">
+            <Button Command="{Binding UpdateCommand}">
+                <WrapPanel>
+                    <TextBlock Margin="0,0,5,0" Text="{Resx _UpdateAll}" />
+                    <TextBlock Text="{Binding MarketTickers.Quote.Code }" />
+                    <TextBlock Text="{Resx _sTickers}" />
+                </WrapPanel>
+            </Button>
+            <WrapPanel Visibility="{Binding IsShowConvert, Converter={StaticResource BoolToVis}}">
+                <ToggleButton HorizontalAlignment="Center" IsChecked="{Binding IsShowRateList}" Command="{Binding GetRateListCommand}">
+                    <WrapPanel>
+                        <TextBlock Margin="0,0,5,0" Text="{Resx _Let}" />
+                        <TextBlock Text="{Binding MarketTickers.Quote.Code}"/>
+                        <TextBlock Text="/" />
+                        <TextBlock Text="{Binding LocalCurrencyCode}" />
+                        <TextBlock Text="{Resx _sRate }" />
+                    </WrapPanel>
+                </ToggleButton>
+                <ComboBox ItemsSource="{Binding RateList}" Visibility="{Binding IsShowRateList, Converter={StaticResource BoolToVis}}" SelectedItem="{Binding SelectedRate}" />
+                <TextBox Width="80" Text="{Binding Rate}"></TextBox>
+                <ToggleButton IsChecked="{Binding NeedConvert}" Command="{Binding ConvertCurrencyCommand}" >
+                    <WrapPanel>
+                        <TextBlock Margin="0,0,5,0" Text="{Resx _ConvertPriceTo }" />
+                        <TextBlock Text="{Binding LocalCurrencyCode}" />
+                    </WrapPanel>
+                </ToggleButton>
+            </WrapPanel>
+        </WrapPanel>
+        <ScrollViewer Height="540" VerticalScrollBarVisibility="Auto">
+            <local:MarketView ItemsSource="{Binding MarketTickers}" Tag="{Binding RefreshTickerCommand}"  />
+        </ScrollViewer>
+    </StackPanel>
+</Metro:MetroTabItem>

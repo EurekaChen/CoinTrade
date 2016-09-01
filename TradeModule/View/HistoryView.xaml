@@ -1,0 +1,18 @@
+﻿<ListView x:Class="Eureka.CoinTrade.TradeModule.View.HistoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Width="604" Height="110"
+          >
+    <ListView.View>
+        <GridView>
+            <GridViewColumn Header="Time" DisplayMemberBinding="{Binding DealTime}"  Width="150"/>
+            <GridViewColumn Header="Buy/Sell" DisplayMemberBinding="{Binding DealType}"  Width="50"/>
+            <GridViewColumn Header="Price" DisplayMemberBinding="{Binding PriceQuantity.Price}"  Width="130"/>
+            <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding PriceQuantity.Quantity}"  Width="130" />
+            <GridViewColumn Header="Total" DisplayMemberBinding="{Binding PriceQuantity.Total}" Width="130" />
+        </GridView>
+    </ListView.View>
+</ListView>
+

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_Language" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="_Accent" xml:space="preserve">
+    <value>顏色偏好</value>
+  </data>
+  <data name="_File" xml:space="preserve">
+    <value>檔</value>
+  </data>
+  <data name="_Notice" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="_Name" xml:space="preserve">
+    <value>您的姓名：</value>
+  </data>
+  <data name="_Theme" xml:space="preserve">
+    <value>介面主題</value>
+  </data>
+  <data name="_SimChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="_MachineCode" xml:space="preserve">
+    <value>機器碼：</value>
+  </data>
+  <data name="_Information" xml:space="preserve">
+    <value>基本資訊</value>
+  </data>
+  <data name="_About" xml:space="preserve">
+    <value>關於</value>
+  </data>
+  <data name="_Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="_Feedback" xml:space="preserve">
+    <value>回饋</value>
+  </data>
+  <data name="_TraChinese" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="_ExpireDate" xml:space="preserve">
+    <value>到期日期：</value>
+  </data>
+  <data name="_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="_Help" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="_Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="_Alert" xml:space="preserve">
+    <value>價格提醒</value>
+  </data>
+  <data name="_Red" xml:space="preserve">
+    <value>紅色</value>
+  </data>
+  <data name="_Green" xml:space="preserve">
+    <value>綠色</value>
+  </data>
+  <data name="_Orange" xml:space="preserve">
+    <value>橙色</value>
+  </data>
+  <data name="_Purple" xml:space="preserve">
+    <value>紫色</value>
+  </data>
+  <data name="_Lime" xml:space="preserve">
+    <value>綠黃</value>
+  </data>
+  <data name="_Emerald" xml:space="preserve">
+    <value>翡翠</value>
+  </data>
+  <data name="_Teal" xml:space="preserve">
+    <value>深青</value>
+  </data>
+  <data name="_Cyan" xml:space="preserve">
+    <value>藍綠</value>
+  </data>
+  <data name="_Cobalt" xml:space="preserve">
+    <value>鈷藍</value>
+  </data>
+  <data name="_Indigo" xml:space="preserve">
+    <value>靛藍</value>
+  </data>
+  <data name="_Violet" xml:space="preserve">
+    <value>藍紫</value>
+  </data>
+  <data name="_Pink" xml:space="preserve">
+    <value>粉紅</value>
+  </data>
+  <data name="_Magenta" xml:space="preserve">
+    <value>洋紅</value>
+  </data>
+  <data name="_Crimson" xml:space="preserve">
+    <value>深紅</value>
+  </data>
+  <data name="_Amber" xml:space="preserve">
+    <value>琥珀</value>
+  </data>
+  <data name="_Yellow" xml:space="preserve">
+    <value>黃色</value>
+  </data>
+  <data name="_Brown" xml:space="preserve">
+    <value>棕色</value>
+  </data>
+  <data name="_Olive" xml:space="preserve">
+    <value>橄欖</value>
+  </data>
+  <data name="_Steel" xml:space="preserve">
+    <value>青灰</value>
+  </data>
+  <data name="_Mauve" xml:space="preserve">
+    <value>淡紫</value>
+  </data>
+  <data name="_Sienna" xml:space="preserve">
+    <value>紅褐</value>
+  </data>
+  <data name="_Blue" xml:space="preserve">
+    <value>藍色</value>
+  </data>
+  <data name="_Config" xml:space="preserve">
+    <value>選項配置</value>
+  </data>
+  <data name="_Fund" xml:space="preserve">
+    <value>資金管理</value>
+  </data>
+  <data name="_LicensedTo" xml:space="preserve">
+    <value>授權給</value>
+  </data>
+  <data name="_Price" xml:space="preserve">
+    <value>市場價格</value>
+  </data>
+  <data name="_Title" xml:space="preserve">
+    <value>易易數位幣即時交易平臺</value>
+  </data>
+  <data name="_Trade" xml:space="preserve">
+    <value>即時交易</value>
+  </data>
+  <data name="_Dark" xml:space="preserve">
+    <value>亮色主題</value>
+  </data>
+  <data name="_Light" xml:space="preserve">
+    <value>亮色主題</value>
+  </data>
+  <data name="_SendFeedback" xml:space="preserve">
+    <value>發送回饋資訊</value>
+  </data>
+  <data name="_Chart" xml:space="preserve">
+    <value>市場圖表</value>
+  </data>
+</root>

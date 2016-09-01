@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.AlertModule.View.CoupleAlertsView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.AlertModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:local="clr-namespace:Eureka.CoinTrade.AlertModule.ViewModel"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="1000">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis" />
+        <local:PriceTypeConverter x:Key="priceTypeConverter"/>
+        <local:MonitorStateConverter x:Key="monitorStateConverter"/>
+    </UserControl.Resources>
+    <StackPanel>
+        <WrapPanel HorizontalAlignment="Center">
+            <TextBlock Text="{Resx _Every}"></TextBlock>
+            <TextBox Text="{Binding UpdateInterval}" Width="30"></TextBox>
+            <TextBlock Text="{Resx _Second}"></TextBlock>
+            <TextBlock Text="{Resx _RefreshPrice}"></TextBlock>
+            <ToggleButton Name="WatchToggle" Command="{Binding WatchCommand}" CommandParameter="{Binding ElementName=WatchToggle, Path=IsChecked}" Content="{Resx _BeginAutoMonitor}"></ToggleButton>
+            <Button Command="{Binding SaveCommand}" Margin="50,0,0,0" Content="{Resx _SaveYourAlerts}" />
+        </WrapPanel>
+        <ScrollViewer Height="345" VerticalScrollBarVisibility="Auto">
+            <ItemsControl Name="AlertsControl"  VerticalAlignment="Top" ItemsSource="{Binding Alerts}"  Tag="{Binding DeleteItemCommand}" >
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <WrapPanel IsEnabled="{Binding IsOpen}" Width="1030" >
+                                <WrapPanel.Background >
+                                    <SolidColorBrush Color="{Binding BackgroundColor }"/>
+                                </WrapPanel.Background>
+                                <WrapPanel.ToolTip>
+                                    <WrapPanel>
+                                        <TextBlock Text="{Resx _WhenDiffHighThan}"></TextBlock>
+                                        <TextBlock Text="{Binding PriceDifference}"></TextBlock>
+                                        <TextBlock Text="{Resx _BackgroundWillBe}"></TextBlock>
+                                        <TextBlock Width="20" >
+                                            <TextBlock.Background>
+                                                <SolidColorBrush Color="{Binding AlertColor}" />
+                                            </TextBlock.Background>
+                                        </TextBlock>
+                                        <WrapPanel Visibility="{Binding IsPlaySound, Converter={StaticResource boolToVis}}">
+                                            <TextBlock Text="{Resx _AndPlaySound}"></TextBlock>
+                                            <TextBlock Text="{Binding SoundFile}"></TextBlock>
+                                        </WrapPanel>
+                                    </WrapPanel>
+                                </WrapPanel.ToolTip>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _NowTradePair}"></TextBlock>
+                                <TextBlock FontWeight="Bold" Text="{Binding PairCode}">
+                                </TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _InExchange}"></TextBlock>
+                                <TextBlock FontWeight="Bold" Text="{Binding Exchange1AbbrName}">
+                                </TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _s}"></TextBlock>
+                                <TextBlock FontWeight="Black" Name="PriceTypeTextBlock1" >
+                                    <TextBlock.Text>
+                                        <Resx Key="PriceTypeTextBlock1.Text" 
+                                              BindingPath="PriceType1"                                
+                                              BindingConverter="{StaticResource priceTypeConverter}" />
+                                    </TextBlock.Text>
+                                </TextBlock>
+                                <TextBlock FontWeight="ExtraBold" Text="{Binding Price1}" />
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _HighThan}"></TextBlock>
+                                <TextBlock FontWeight="Bold" Text="{Binding Exchange2AbbrName}"></TextBlock>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _s}"></TextBlock>
+                                <TextBlock FontWeight="Black" Name="PriceTypeTextBlock2" >
+                                    <TextBlock.Text>
+                                        <Resx Key="PriceTypeTextBlock2.Text" 
+                                              BindingPath="PriceType2"                                
+                                              BindingConverter="{StaticResource priceTypeConverter}" />
+                                    </TextBlock.Text>
+                                </TextBlock>
+                                <TextBlock FontWeight="ExtraBold" Text="{Binding Price2}"/>
+                                <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _Diff}" />
+                                <TextBlock FontWeight="ExtraBlack" Text="{Binding CurrentDifference}"/>
+                                <TextBlock FontWeight="Bold" Name="StateTexbBlock" >
+                                    <TextBlock.Text>
+                                        <Resx Key="StateTexbBlock.Text" BindingPath="State" BindingConverter="{StaticResource monitorStateConverter}" />
+                                    </TextBlock.Text>
+                                </TextBlock>                               
+                            </WrapPanel>
+                            <ToggleButton Name="OpenButton" IsChecked="{Binding IsOpen}">
+                                <TextBlock Name="ToggleTextBlock">
+                                    <TextBlock.Text>
+                                        <Resx Key="ToggleTextBlock" BindingPath="ToggleText" />
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </ToggleButton>
+                            <Button Command="{Binding ElementName=AlertsControl, Path=Tag }" CommandParameter="{Binding}" Content="{Resx _DeleteAlert}"></Button>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

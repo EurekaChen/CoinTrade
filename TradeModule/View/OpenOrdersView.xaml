@@ -1,0 +1,26 @@
+﻿<ListView x:Class="Eureka.CoinTrade.TradeModule.View.OpenOrdersView"
+           ResxExtension.DefaultResxName="Eureka.CoinTrade.TradeModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Width="604" Height="120" x:Name="OpenDealList"    
+          >
+    <ListView.View>
+        <GridView >
+            <GridViewColumn Header="Order Id" DisplayMemberBinding="{Binding Id}"  Width="100"/>
+            <GridViewColumn Header="Time" DisplayMemberBinding="{Binding OrderTime}"  Width="120"/>
+            <GridViewColumn Header="Buy/Sell" DisplayMemberBinding="{Binding OrderType}"  Width="50"/>
+            <GridViewColumn Header="Price" DisplayMemberBinding="{Binding PriceQuantity.Price}"  Width="130"/>
+            <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding PriceQuantity.Quantity}"  Width="130" />          
+            <GridViewColumn Header="Cancel">
+                <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button  Content="{Resx _CancelOrder}" Command="{Binding ElementName=OpenDealList, Path=Tag}" CommandParameter="{Binding Id}" Cursor="Hand" />
+                    </DataTemplate>
+                </GridViewColumn.CellTemplate>
+            </GridViewColumn>
+        </GridView>
+    </ListView.View>
+</ListView>
+

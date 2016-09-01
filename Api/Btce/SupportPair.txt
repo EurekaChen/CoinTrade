@@ -1,0 +1,18 @@
+﻿[
+	"BTCUSD",
+	"BTCRUR",
+	"BTCEUR",
+	"LTCBTC",	
+	"LTCUSD",
+	"LTCRUR",
+	"LTCEUR",
+	"NMCBTC",
+	"NMCUSD",
+	"NVCBTC",
+	"NVCUSD",	
+	"TRCBTC",
+	"PPCBTC",
+	"PPCUSD",
+	"FTCBTC",
+	"XPMBTC"
+]

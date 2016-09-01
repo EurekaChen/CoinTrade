@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.FundModule.View.FundMainView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.FundModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:prism="http://www.codeplex.com/prism"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1100">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
+    <StackPanel>
+        <WrapPanel HorizontalAlignment="Center">
+            <Button Width="200" Command="{Binding RefreshAllCommand}" Content="{Resx _UpdateAllFund}"></Button>
+            <Label Content="{Resx _NoteApiKey}"></Label>
+        </WrapPanel>     
+        <Metro:MetroTabControl ItemsSource="{Binding Funds }" Margin="20,0,20,0">
+            <Metro:MetroTabControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock FontSize="20" Text="{Binding Exchange.Name}" />
+                </DataTemplate>
+            </Metro:MetroTabControl.ItemTemplate>
+            <Metro:MetroTabControl.ContentTemplate>
+                <DataTemplate>
+                    <ScrollViewer Height="550" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+                        <StackPanel Margin="20" >
+                            <GroupBox Header="{Resx _AvailableFund}" >
+                                <ItemsControl ItemsSource="{Binding Available}" >
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <WrapPanel VerticalAlignment="Bottom">
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Key.Name}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Resx _Balance}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Value}"/>
+                                                <TextBlock Margin="8" FontSize="20"  Text="{Binding  Key.Code}" />
+                                            </WrapPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </GroupBox>
+                            <GroupBox>
+                                <GroupBox.Header>
+                                    <WrapPanel>
+                                        <TextBlock Text="{Resx _LockedFund}" />
+                                        <WrapPanel Visibility="{Binding CanNotGetFrozen, Converter={StaticResource BoolToVis}}">                                           
+                                            <TextBlock Text="{Binding Exchange.Name}" />
+                                            <TextBlock Text="{Resx _NotSupportLockedFund }" />
+                                        </WrapPanel>
+                                    </WrapPanel>
+                                </GroupBox.Header>
+                                <ItemsControl ItemsSource="{Binding Frozen }"  >
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <WrapPanel VerticalAlignment="Bottom">
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Key.Name}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Resx _Balance}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Value}"/>
+                                                <TextBlock Margin="8" FontSize="20"  Text="{Binding  Key.Code}" />
+                                            </WrapPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </GroupBox>
+                            <GroupBox Header="{Resx _TotalFund}">
+                                <ItemsControl ItemsSource="{Binding Total }"  >
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <WrapPanel VerticalAlignment="Bottom">
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Key.Name}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Resx _Balance}" />
+                                                <TextBlock Margin="8" FontSize="20" Text="{Binding Value}"/>
+                                                <TextBlock Margin="8" FontSize="20"  Text="{Binding  Key.Code}" />
+                                            </WrapPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </GroupBox>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </Metro:MetroTabControl.ContentTemplate>
+        </Metro:MetroTabControl>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,10 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Eureka.CoinTrade.MarketInfo.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Eureka.CoinTrade.MarketInfo.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Eureka.CoinTrade.Base.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Newtonsoft.Json.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Eureka.CoinTrade.Base.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Newtonsoft.Json.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\bin\Debug\Newtonsoft.Json.xml
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\obj\Debug\MarketInfo.csprojResolveAssemblyReference.cache
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\obj\Debug\Eureka.CoinTrade.MarketInfo.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\MarketInfo\obj\Debug\Eureka.CoinTrade.MarketInfo.pdb

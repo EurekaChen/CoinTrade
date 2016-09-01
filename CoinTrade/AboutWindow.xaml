@@ -1,0 +1,47 @@
+﻿<Metro:MetroWindow x:Class="Eureka.CoinTrade.AboutWindow"
+                   ResxExtension.DefaultResxName="Eureka.CoinTrade.AboutWindow" 
+                   Language="{UICulture}"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:Metro="http://metro.mahapps.com/winfx/xaml/controls"
+                   Title="{Resx _About }" 
+                   GlowBrush="{DynamicResource AccentColorBrush}"
+                   Height="Auto"
+                   Width="500" 
+                   ShowInTaskbar="False" 
+                   ResizeMode="NoResize"
+                   WindowStyle="SingleBorderWindow"
+                   SizeToContent="Height" 
+                   WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+
+    </Window.Resources>
+    <StackPanel>
+        <Image Width="128" Height="128" Source="CoinTrade.png" />
+        <StackPanel>
+            <Label  Content="{Binding Mode=OneTime, Path=Product}" />
+            <StackPanel Orientation="Horizontal">
+                <Label  Content="{Resx _Version}" />
+                <Label  Content="{Binding Mode=OneTime, Path=Version}" />
+            </StackPanel>
+            <Label  Content="{Binding Mode=OneTime, Path=Copyright}"  />
+            <Label  Content="{Binding Mode=OneTime, Path=Company}" />
+            <Label  Content="{Resx _ProductDetail}" />
+            <TextBox  Text="{Binding Mode=OneTime, Path=Description}"   />
+            <DockPanel>
+                <Button x:Name="okButton"   
+                        MinWidth="75"
+                        Margin="0,5"
+                        DockPanel.Dock="Right" 
+                        IsDefault="True" 
+                        IsCancel="True" 
+                        Content="{Resx _Ok}" />
+                <Label x:Name="productLink" >
+                    <Hyperlink NavigateUri="{Binding Url}"  Hyperlink.RequestNavigate="hyperlink_RequestNavigate">
+                        <TextBlock Text="{Resx _MoreInfo}" />
+                    </Hyperlink>
+                </Label>
+            </DockPanel>
+        </StackPanel>
+    </StackPanel>
+</Metro:MetroWindow>

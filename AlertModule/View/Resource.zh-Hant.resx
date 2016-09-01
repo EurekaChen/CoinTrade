@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_SingleExchangePriceAlert" xml:space="preserve">
+    <value>單個交易所價格提醒</value>
+  </data>
+  <data name="_CoupleExchangePriceDiffAlert" xml:space="preserve">
+    <value>兩個交易所間差價提醒</value>
+  </data>
+  <data name="_MutilpleExchangePriceAlert" xml:space="preserve">
+    <value>多個交易所價格提醒</value>
+  </data>
+  <data name="_AddAlert" xml:space="preserve">
+    <value>添加新的提醒</value>
+  </data>
+  <data name="_Alerts" xml:space="preserve">
+    <value>已經設置的提醒</value>
+  </data>
+  <data name="_WhenTradePair" xml:space="preserve">
+    <value>當交易對</value>
+  </data>
+  <data name="_InExchange" xml:space="preserve">
+    <value>在交易所</value>
+  </data>
+  <data name="_s" xml:space="preserve">
+    <value>的</value>
+  </data>
+  <data name="_HighThan" xml:space="preserve">
+    <value>高於</value>
+  </data>
+  <data name="_LowThan" xml:space="preserve">
+    <value>低於</value>
+  </data>
+  <data name="_ShowAlertColor" xml:space="preserve">
+    <value>顯示提醒顏色</value>
+  </data>
+  <data name="_Red" xml:space="preserve">
+    <value>紅色</value>
+  </data>
+  <data name="_Green" xml:space="preserve">
+    <value>綠色</value>
+  </data>
+  <data name="_Orange" xml:space="preserve">
+    <value>橙色</value>
+  </data>
+  <data name="_Purple" xml:space="preserve">
+    <value>紫色</value>
+  </data>
+  <data name="_Lime" xml:space="preserve">
+    <value>綠黃</value>
+  </data>
+  <data name="_Emerald" xml:space="preserve">
+    <value>翡翠</value>
+  </data>
+  <data name="_Teal" xml:space="preserve">
+    <value>深青</value>
+  </data>
+  <data name="_Cyan" xml:space="preserve">
+    <value>藍綠</value>
+  </data>
+  <data name="_Cobalt" xml:space="preserve">
+    <value>鈷藍</value>
+  </data>
+  <data name="_Indigo" xml:space="preserve">
+    <value>靛藍</value>
+  </data>
+  <data name="_Violet" xml:space="preserve">
+    <value>藍紫</value>
+  </data>
+  <data name="_Pink" xml:space="preserve">
+    <value>粉紅</value>
+  </data>
+  <data name="_Magenta" xml:space="preserve">
+    <value>洋紅</value>
+  </data>
+  <data name="_Crimson" xml:space="preserve">
+    <value>深紅</value>
+  </data>
+  <data name="_Amber" xml:space="preserve">
+    <value>琥珀</value>
+  </data>
+  <data name="_Yellow" xml:space="preserve">
+    <value>黃色</value>
+  </data>
+  <data name="_Brown" xml:space="preserve">
+    <value>棕色</value>
+  </data>
+  <data name="_Olive" xml:space="preserve">
+    <value>橄欖</value>
+  </data>
+  <data name="_Steel" xml:space="preserve">
+    <value>青灰</value>
+  </data>
+  <data name="_Mauve" xml:space="preserve">
+    <value>淡紫</value>
+  </data>
+  <data name="_Sienna" xml:space="preserve">
+    <value>紅褐</value>
+  </data>
+  <data name="_Blue" xml:space="preserve">
+    <value>藍色</value>
+  </data>
+  <data name="_SoundAlert" xml:space="preserve">
+    <value>聲音提示</value>
+  </data>
+  <data name="_TestSound" xml:space="preserve">
+    <value>測試聲音</value>
+  </data>
+  <data name="_Every" xml:space="preserve">
+    <value>每隔</value>
+  </data>
+  <data name="_Second" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="_RefreshPrice" xml:space="preserve">
+    <value>刷新資料</value>
+  </data>
+  <data name="_BeginAutoMonitor" xml:space="preserve">
+    <value>開始自動監測</value>
+  </data>
+  <data name="_SaveYourAlerts" xml:space="preserve">
+    <value>保存提醒設置</value>
+  </data>
+  <data name="_WhenPriceHighThan" xml:space="preserve">
+    <value>當價格大於</value>
+  </data>
+  <data name="_WhenPriceLowThan" xml:space="preserve">
+    <value>當價格小於</value>
+  </data>
+  <data name="_BackgroundWillBe" xml:space="preserve">
+    <value>時背景顏色會變成</value>
+  </data>
+  <data name="_AndPlaySound" xml:space="preserve">
+    <value>並播放聲音</value>
+  </data>
+  <data name="_NowTradePair" xml:space="preserve">
+    <value>當前交易對</value>
+  </data>
+  <data name="_NowState" xml:space="preserve">
+    <value>目前狀態:</value>
+  </data>
+  <data name="_DeleteAlert" xml:space="preserve">
+    <value>刪除提醒</value>
+  </data>
+  <data name="_InExchangesBelow" xml:space="preserve">
+    <value>在以下交易所的</value>
+  </data>
+  <data name="_PleaseSelectYour" xml:space="preserve">
+    <value>請選擇您關注的</value>
+  </data>
+  <data name="_Exchanges" xml:space="preserve">
+    <value>交易所:</value>
+  </data>
+  <data name="_Exchange" xml:space="preserve">
+    <value>交易所</value>
+  </data>
+  <data name="_WhenAnyExchangesPrice" xml:space="preserve">
+    <value>當任意一個交易的價格</value>
+  </data>
+  <data name="_NowHighestIs" xml:space="preserve">
+    <value>當前最高為</value>
+  </data>
+  <data name="_NowLowestIs" xml:space="preserve">
+    <value>當前最低為</value>
+  </data>
+  <data name="_YourSelectedExchangess" xml:space="preserve">
+    <value>您所選將交易所的</value>
+  </data>
+  <data name="_WhenDiffHighThan" xml:space="preserve">
+    <value>當差價大於</value>
+  </data>
+  <data name="_Diff" xml:space="preserve">
+    <value>差價</value>
+  </data>
+  <data name="_Rate" xml:space="preserve">
+    <value>匯率：</value>
+  </data>
+  <data name="_MergeTo" xml:space="preserve">
+    <value>合并到</value>
+  </data>
+  <data name="_NoteMerge" xml:space="preserve">
+    <value>若要合併提醒，必須在”市场價格“模塊設置匯率並按下轉換按鈕！</value>
+  </data>
+</root>

@@ -1,0 +1,1 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\ExchangeRateApi\obj\Debug\ExchangeRate.csprojResolveAssemblyReference.cache

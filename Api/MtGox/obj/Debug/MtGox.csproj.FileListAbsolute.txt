@@ -1,0 +1,10 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.MtGox.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.MtGox.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\Eureka.CoinTrade.Api.MtGox.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\Eureka.CoinTrade.Api.MtGox.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\MtGox.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.MtGox.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.MtGox.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\Eureka.CoinTrade.Api.MtGox.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\Eureka.CoinTrade.Api.MtGox.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\MtGox\obj\Debug\MtGox.csprojResolveAssemblyReference.cache

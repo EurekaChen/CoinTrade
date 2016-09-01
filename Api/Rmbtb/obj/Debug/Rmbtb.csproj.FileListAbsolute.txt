@@ -1,0 +1,10 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Rmbtb.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Rmbtb.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Eureka.CoinTrade.Api.Rmbtb.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Eureka.CoinTrade.Api.Rmbtb.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Rmbtb.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Rmbtb.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Rmbtb.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Eureka.CoinTrade.Api.Rmbtb.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Eureka.CoinTrade.Api.Rmbtb.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\Rmbtb\obj\Debug\Rmbtb.csprojResolveAssemblyReference.cache

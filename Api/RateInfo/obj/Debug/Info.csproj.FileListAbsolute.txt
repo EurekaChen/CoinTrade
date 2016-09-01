@@ -1,0 +1,5 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Info.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.Info.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\ExchangeRateApi\obj\Debug\Info.csprojResolveAssemblyReference.cache
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\ExchangeRateApi\obj\Debug\Eureka.CoinTrade.Api.Info.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\ExchangeRateApi\obj\Debug\Eureka.CoinTrade.Api.Info.pdb

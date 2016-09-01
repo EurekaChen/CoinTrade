@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.ConfigModule.View.OtherOptionView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.ConfigModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Width="1200" Height="650">
+    <StackPanel Margin="20">
+        <DockPanel>           
+            <Button FontSize="20" DockPanel.Dock="Right" HorizontalAlignment="Right" Command="{Binding ConfirmCommand}" Content="{Resx _Confirm}"></Button>
+            <Label FontSize="20" DockPanel.Dock="Right"  HorizontalAlignment="Right" Content="{Resx _PleaseRestartApplicationAfterConfirm}" ></Label>           
+        </DockPanel>      
+        <ScrollViewer Width="1150" Height="600" VerticalScrollBarVisibility="Auto" BorderThickness="2" BorderBrush="Gray" >
+            <StackPanel Margin="20">
+                <WrapPanel>
+                    <Label VerticalAlignment="Center" Content="{Resx _SelectLocalCurrency}" />
+                    <ComboBox ItemsSource="{Binding LegalCurrencies}" SelectedItem="{Binding  Option.LocalCurrencyCode}" />
+                </WrapPanel>
+                <CheckBox FontSize="20" Margin="10" IsChecked="{Binding Option.IsAutoRate}" Content="{Resx _AutoUpdatePriceAndIndexWhenStart}"/>
+                <CheckBox FontSize="20" Margin="10" IsChecked="{Binding Option.IsAutoTicker}" Content="{Resx _AutoUpdateTickersWhenStart}" />
+                <CheckBox FontSize="20" Margin="10" IsChecked="{Binding Option.IsAutoFund}" Content="{Resx _AutoUpdateFundInfoWhenStart}"/>        
+                <WrapPanel>
+                    <Label FontSize="20" Content="{Resx _SetTimeoutOfAuthorizeApi}" ></Label>
+                    <TextBox FontSize="20" Text="{Binding Option.Timeout, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="200"></TextBox>
+                    <Label FontSize="20" Content="{Resx _Millisecond}"></Label>
+                    <Label FontSize="18" Content="{Resx _DefaultAndRange}"></Label>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label FontSize="20" Content="{Resx _BitstampClientId}"></Label>
+                    <TextBox FontSize="20" Text="{Binding Option.BitstampClientId, Mode=TwoWay}" Width="180" />
+                    <Label FontSize="18" Content="{Resx _NoteBitstampClientId}"></Label>
+                </WrapPanel>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

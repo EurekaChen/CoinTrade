@@ -1,0 +1,18 @@
+﻿[
+    {"Name":"United State Dollar","Code":"USD","ChineseName":"美元"},
+	{"Name":"Chinese Yuan","Code":"CNY","ChineseName":"人民币"},
+	{"Name":"Euro","Code":"EUR","ChineseName":"欧元"},
+	{"Name":"Canadian Dollar","Code":"CAD","ChineseName":"加元"},
+	{"Name":"Russian Ruble","Code":"RUB","ChineseName":"卢布"},
+	{"Name":"Russian Ruble","Code":"RUR","ChineseName":"卢布"},
+	{"Name":"Japanese Yen","Code":"JPY","ChineseName":"日元"},
+	{"Name":"Pound Sterling","Code":"GBP","ChineseName":"英镑"},
+	{"Name":"Australian Dollar","Code":"AUD","ChineseName":"澳元"},
+	{"Name":"Swiss Franc","Code":"CHF","ChineseName":"瑞士法郎"},
+	{"Name":"Mexican Peso","Code":"MXN","ChineseName":"墨西哥比索"},
+	{"Name":"New Zealand Dollar","Code":"NZD","ChineseName":"新西兰元"},
+	{"Name":"Swedish Krona","Code":"SEK","ChineseName":"瑞典克朗"},
+	{"Name":"Hongkong Dollar","Code":"HKD","ChineseName":"港元"},
+	{"Name":"Singapore Dollar","Code":"SGD","ChineseName":"新加波元"},
+	{"Name":"Turkish lira","Code":"TRY","ChineseName":"土耳其里拉"}
+]

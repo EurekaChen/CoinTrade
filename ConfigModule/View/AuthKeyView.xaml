@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.ConfigModule.View.AuthKeyView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.ConfigModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Width="1200" Height="650">
+    <StackPanel Margin="20">
+        <DockPanel>
+            <Label FontSize="20"  Content="{Resx _PleaseConfigYourApiKey}"></Label>
+            <Label VerticalAlignment="Bottom" Content="{Resx _NoteNeedKey}"></Label>
+            <Button FontSize="20" DockPanel.Dock="Right" HorizontalAlignment="Right" Command="{Binding ConfirmCommand}" Content="{Resx _Confirm}"></Button>
+            <Label FontSize="20" DockPanel.Dock="Right"  HorizontalAlignment="Right" Content="{Resx _PleaseRestartApplicationAfterConfirm}" ></Label>
+           
+        </DockPanel>      
+        <ScrollViewer Width="1150" Height="500" VerticalScrollBarVisibility="Auto" BorderThickness="2" BorderBrush="Gray" >
+        <ItemsControl ItemsSource="{Binding AuthKeys}" ScrollViewer.HorizontalScrollBarVisibility="Auto" IsManipulationEnabled="False" >
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <GroupBox>
+                        <GroupBox.Header>
+                            <WrapPanel>
+                                <Label>
+                                    <WrapPanel>
+                                        <TextBlock Text="{Binding Key}"></TextBlock>
+                                        <TextBlock Text="{Resx _sApiKey}"></TextBlock>                                        
+                                    </WrapPanel>
+                                </Label>
+                            </WrapPanel>
+                        </GroupBox.Header>
+                            <StackPanel>
+                                <WrapPanel>
+                                    <Label>Public Key</Label>
+                                    <TextBox Width="600" Text="{Binding Value.PublicKey}"></TextBox>
+                                </WrapPanel>
+                                <WrapPanel>
+                                    <Label>Secret Key</Label>
+                                    <TextBox Width="800" Text="{Binding Value.PrivateKey}"></TextBox>
+                                </WrapPanel>
+                            </StackPanel>                           
+                    </GroupBox>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

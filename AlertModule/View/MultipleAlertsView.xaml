@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.AlertModule.View.MultipleAlertsView"
+              ResxExtension.DefaultResxName="Eureka.CoinTrade.AlertModule.View.Resource" 
+              xmlns:local="clr-namespace:Eureka.CoinTrade.AlertModule.ViewModel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="1000">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis" />
+        <local:PriceTypeConverter x:Key="priceTypeConverter"/>
+        <local:MonitorStateConverter x:Key="monitorStateConverter"/>
+    </UserControl.Resources>
+    <StackPanel>
+        <WrapPanel HorizontalAlignment="Center">
+            <TextBlock Text="{Resx _Every}"></TextBlock>
+            <TextBox Text="{Binding UpdateInterval}" Width="30"></TextBox>
+            <TextBlock Text="{Resx _Second}"></TextBlock>
+            <TextBlock Text="{Resx _RefreshPrice}"></TextBlock>
+            <ToggleButton Name="WatchToggle" Command="{Binding WatchCommand}" CommandParameter="{Binding ElementName=WatchToggle, Path=IsChecked}"  Content="{Resx _BeginAutoMonitor}"></ToggleButton>
+            <Button Command="{Binding SaveCommand}" Margin="50,0,0,0" Content="{Resx _SaveYourAlerts}" />
+        </WrapPanel>
+        <ScrollViewer Height="375" VerticalScrollBarVisibility="Auto">
+            <ItemsControl Name="AlertsControl"  VerticalAlignment="Top" ItemsSource="{Binding Alerts}"  Tag="{Binding DeleteItemCommand}" >
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <StackPanel IsEnabled="{Binding IsOpen}" Width="1030" >
+                                <StackPanel.Background >
+                                    <SolidColorBrush Color="{Binding BackgroundColor }"/>
+                                </StackPanel.Background>
+                                <StackPanel.ToolTip>
+                                    <WrapPanel>
+                                        <TextBlock Text="{Resx _WhenAnyExchangesPrice}"></TextBlock>
+                                        <TextBlock Visibility="{Binding IsHighThan,Converter={StaticResource boolToVis} }" Text="{Resx _WhenPriceHighThan}"></TextBlock>
+                                        <TextBlock Visibility="{Binding IsLowThan,Converter={StaticResource boolToVis} }" Text="{Resx _WhenPriceLowThan}"></TextBlock>
+                                        <TextBlock Text="{Binding ComparePrice}"></TextBlock>
+                                        <TextBlock Text="{Resx _BackgroundWillBe}"></TextBlock>
+                                        <TextBlock Width="20" >
+                                            <TextBlock.Background>
+                                                <SolidColorBrush Color="{Binding AlertColor}" />
+                                            </TextBlock.Background>
+                                        </TextBlock>
+                                        <WrapPanel Visibility="{Binding IsPlaySound, Converter={StaticResource boolToVis}}">
+                                            <TextBlock Text="{Resx _AndPlaySound}"></TextBlock>
+                                            <TextBlock Text="{Binding SoundFile}"></TextBlock>
+                                        </WrapPanel>
+                                    </WrapPanel>
+                                </StackPanel.ToolTip>
+                                <WrapPanel>
+                                    <TextBlock FontSize="14" VerticalAlignment="Center"  Text="{Resx _NowTradePair}"></TextBlock>
+                                    <TextBlock FontWeight="Bold" Text="{Binding PairCode}">
+                                    </TextBlock>
+                                    <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _s}"></TextBlock>
+                                    <TextBlock Margin="4,0,4,0" FontWeight="Black" Name="PriceTypeTextBlock1" >
+                                        <TextBlock.Text>
+                                            <Resx Key="PriceTypeTextBlock1.Text" 
+                                          BindingPath="PriceType"                                
+                                  BindingConverter="{StaticResource priceTypeConverter}" />
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <TextBlock Visibility="{Binding IsHighThan, Converter={StaticResource boolToVis}}" Text="{Resx _NowHighestIs}" />
+                                    <TextBlock Visibility="{Binding IsLowThan,Converter={StaticResource boolToVis}}" Text="{Resx _NowLowestIs}" />
+                                    <TextBlock Margin="4,0,4,0" FontWeight="ExtraBold" Text="{Binding Price}" />
+
+                                    <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _NowState}" />
+                                    <TextBlock FontWeight="Bold" Name="StateTexbBlock" >
+                                        <TextBlock.Text>
+                                            <Resx Key="StateTexbBlock.Text" BindingPath="State" BindingConverter="{StaticResource monitorStateConverter}" />
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </WrapPanel>
+                                <WrapPanel>
+                                    <TextBlock FontSize="14" VerticalAlignment="Center" Text="{Resx _YourSelectedExchangess}" />
+                                    <TextBlock FontWeight="Black" Name="PriceTypeTextBlock" >
+                                        <TextBlock.Text>
+                                            <Resx Key="PriceTypeTextBlock.Text" 
+                                          BindingPath="PriceType"                                
+                                  BindingConverter="{StaticResource priceTypeConverter}" />
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <ItemsControl ItemsSource="{Binding AbbrNamePrices}" >
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <WrapPanel></WrapPanel>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <WrapPanel>
+                                                    <TextBlock Margin="5" VerticalAlignment="Center" FontSize="14" Text="{Binding AbbrName}"></TextBlock>
+                                                    <TextBlock FontSize="14" VerticalAlignment="Center" FontWeight="ExtraBold" Text="{Binding Price}"></TextBlock>
+                                                </WrapPanel>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </WrapPanel>
+                            </StackPanel>
+                            <ToggleButton Name="OpenButton" IsChecked="{Binding IsOpen}" Height="30">
+                                <TextBlock Text="{Binding ToggleText}"></TextBlock>
+                            </ToggleButton>
+                            <Button Command="{Binding ElementName=AlertsControl, Path=Tag }" CommandParameter="{Binding}" Height="30" Content="{Resx _DeleteAlert}"></Button>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

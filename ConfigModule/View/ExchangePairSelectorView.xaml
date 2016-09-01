@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.ConfigModule.View.ExchangePairSelectorView"
+             ResxExtension.DefaultResxName="Eureka.CoinTrade.ConfigModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Width="1200" Height="650">
+    <StackPanel Margin="20">
+        <DockPanel>
+            <TextBlock FontSize="20" Text="{Resx _PleaseSelectYourTradePairs}" />          
+            <Button FontSize="20" DockPanel.Dock="Right" HorizontalAlignment="Right" Command="{Binding ConfirmSelectedPairCommand}" Content="{Resx _Confirm}" />
+            <TextBlock FontSize="20" DockPanel.Dock="Right"  HorizontalAlignment="Right"  Text="{Resx _PleaseRestartApplicationAfterConfirm}"></TextBlock>
+
+        </DockPanel>
+        <ScrollViewer Width="1150" Height="520" VerticalScrollBarVisibility="Auto" BorderThickness="2" BorderBrush="Gray" >
+            <ItemsControl ItemsSource="{Binding AllPairSelectorDict}" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Expander>
+                            <Expander.Header>
+                                <WrapPanel>
+                                    <Label>
+                                        <WrapPanel VerticalAlignment="Center" >
+                                            <TextBlock  FontSize="20" Margin="0,0,10,0" Text="{Binding Key.Name}"></TextBlock>
+                                            <TextBlock FontSize="20" Text="{Resx _SupportPairs}"></TextBlock>
+                                            <TextBlock VerticalAlignment="Center" Text="{Resx _Url}" Margin="30,0,0,0" />
+                                            <Label VerticalAlignment="Center" >
+                                                <Hyperlink   NavigateUri="{Binding Key.ReferralUrl, Mode=OneTime}" RequestNavigate="NavigateTo" >
+                                                    <TextBlock Text="{Binding Key.Url}"/>
+                                                </Hyperlink>
+                                            </Label>                                        
+                                        </WrapPanel>
+                                    </Label>
+                                </WrapPanel>
+                            </Expander.Header>
+                            <ListBox ItemsSource="{Binding Value}" Grid.IsSharedSizeScope="True">
+                                <ListBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <UniformGrid ></UniformGrid>
+                                    </ItemsPanelTemplate>
+                                </ListBox.ItemsPanel>
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsEnabled="{Binding IsEnabled}" IsChecked="{Binding IsSelected}"  Content="{Binding CurrencyPair.Code}" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Expander>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <!-- 用于导出所有交易对用于软件注册-->
+        <!--<Button Command="{Binding ExportCommand}">导出所有交易对</Button>-->
+    </StackPanel>
+</UserControl>

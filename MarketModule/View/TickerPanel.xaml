@@ -1,0 +1,34 @@
+﻿<StackPanel x:Class="Eureka.CoinTrade.MarketModule.View.TickerPanel"
+            ResxExtension.DefaultResxName="Eureka.CoinTrade.MarketModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="600">
+    <WrapPanel>
+        <Label Margin="16,0,0,0" Content="{Resx _InExchange}"></Label>
+        <Label Content="{Binding Exchange.Name}" />
+        <Label Content="{Resx _TradePair}"></Label>
+        <Label Content="{Binding CurrencyPair}" />
+    </WrapPanel>
+    <StackPanel>
+    <WrapPanel>
+        <TextBlock Margin="20,0,10,0" Text="{Resx _LastPrice}" />
+        <TextBlock Text="{Binding LastTradePrice}" Width="80"/>
+        <TextBlock Margin="10,0,10,0" Text="{Resx _HighPrice}" />
+        <TextBlock Text="{Binding HighPrice}" Width="80"/>
+        <TextBlock Margin="10,0,10,0" Text="{Resx _LowPrice}" />
+        <TextBlock Text="{Binding LowPrice}" Width="80"/>
+        
+    </WrapPanel>
+        <WrapPanel>
+            <TextBlock Margin="20,0,10,0" Text="{Resx _SellOne}" />
+            <TextBlock Text="{Binding AskPrice}" Width="80"/>
+            <TextBlock Margin="10,0,10,0" Text="{Resx _BuyOne}" />
+            <TextBlock Text="{Binding BidPrice}" Width="80"/>          
+            <TextBlock Margin="10,0,10,0" Text="{Resx _Volume}" />
+            <TextBlock Text="{Binding Volume}" Width="120"/>
+        </WrapPanel>
+    </StackPanel>
+</StackPanel>

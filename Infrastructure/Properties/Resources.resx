@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="ExpiredInfo" xml:space="preserve">
+    <value>Software has expired, your expire date:</value>
+  </data>
+  <data name="MachineCodeNotMatch" xml:space="preserve">
+    <value>Machine Code Not Match</value>
+  </data>
+  <data name="MachineCodeNotMatchInfo" xml:space="preserve">
+    <value>Your Machine Code Not Match, Your Machine Code:</value>
+  </data>
+  <data name="NoCoinTradeKey" xml:space="preserve">
+    <value>Can't find license file cointrade.key, Please contact service@ee-studio.com for this file！</value>
+  </data>
+  <data name="NoLicense" xml:space="preserve">
+    <value>No License</value>
+  </data>
+  <data name="PriceType_Buy" xml:space="preserve">
+    <value>Buy Price</value>
+  </data>
+  <data name="PriceType_High" xml:space="preserve">
+    <value>High Price</value>
+  </data>
+  <data name="PriceType_Last" xml:space="preserve">
+    <value>Last Price</value>
+  </data>
+  <data name="PriceType_Low" xml:space="preserve">
+    <value>Low Price</value>
+  </data>
+  <data name="PriceType_Sell" xml:space="preserve">
+    <value>Sell Price</value>
+  </data>
+  <data name="YourKeySaved" xml:space="preserve">
+    <value>Your Api Keys have been saved in file "Api.key".</value>
+  </data>
+  <data name="PleaseSelectTradePair" xml:space="preserve">
+    <value>Please Select Trade Pair！</value>
+  </data>
+  <data name="PleaseSelectExchange" xml:space="preserve">
+    <value>Please Select Exchange!</value>
+  </data>
+  <data name="PleaseSelectShowColor" xml:space="preserve">
+    <value>Please Select Show Color!</value>
+  </data>
+  <data name="ResumeAlert" xml:space="preserve">
+    <value>Resume Alert</value>
+  </data>
+  <data name="PauseAlert" xml:space="preserve">
+    <value>Pause Alert</value>
+  </data>
+  <data name="MonitorState_Stop" xml:space="preserve">
+    <value>Monitor Stoped</value>
+  </data>
+  <data name="MonitorState_Start" xml:space="preserve">
+    <value>Monitor Start</value>
+  </data>
+  <data name="MonitorState_Pause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="MonitorState_DataError" xml:space="preserve">
+    <value>Data Error</value>
+  </data>
+  <data name="MonitorState_NotTriggered" xml:space="preserve">
+    <value>Not Triggered</value>
+  </data>
+  <data name="MonitorState_Triggered" xml:space="preserve">
+    <value>Triggered</value>
+  </data>
+  <data name="PleaseSelectFirstExchange" xml:space="preserve">
+    <value>Please Select First Exchange!</value>
+  </data>
+  <data name="PleaseSelectSecondExchange" xml:space="preserve">
+    <value>Please Select Second Exchange!</value>
+  </data>
+  <data name="AtLeastOneExchange" xml:space="preserve">
+    <value>At Least One Exchange!</value>
+  </data>
+  <data name="Prompt" xml:space="preserve">
+    <value>Prompt</value>
+  </data>
+  <data name="WarnInfo" xml:space="preserve">
+    <value>Warn Info</value>
+  </data>
+  <data name="AuthorizeFail" xml:space="preserve">
+    <value>Authorize Fail</value>
+  </data>
+  <data name="ConfigOption" xml:space="preserve">
+    <value>Config Option</value>
+  </data>
+  <data name="TakeEffectAfterRestart" xml:space="preserve">
+    <value>Take effect after restart！</value>
+  </data>
+  <data name="YourNeverSelectAnyPairInExchage" xml:space="preserve">
+    <value>Your Never Select Any Pair in Exchange{0} Function {1} not work</value>
+  </data>
+  <data name="NoApiKeyCantWork" xml:space="preserve">
+    <value>Api Key Info: Your never config Exchange {0}'s Api Key, Function {1} Can not work.</value>
+  </data>
+  <data name="RateInfoBeginQuery" xml:space="preserve">
+    <value>Rate Index Info: Begin Query {1}'s Rate info from {0} ...</value>
+  </data>
+  <data name="RateInfoQueryFail" xml:space="preserve">
+    <value>Rate Index Info: Query {1}'s rate info from {0} fail, Async Error:{2}</value>
+  </data>
+  <data name="RateInfoQuerySuccess" xml:space="preserve">
+    <value>Rate Index Info: Query{1}'s rate info from {0} success, Rate is {2}</value>
+  </data>
+  <data name="RateInfoQueryException" xml:space="preserve">
+    <value>Rate Index Info: Query{1}'s rate info from {0} has exception: {2}</value>
+  </data>
+  <data name="TradeHistory" xml:space="preserve">
+    <value>Trade History</value>
+  </data>
+  <data name="Ticker" xml:space="preserve">
+    <value>Ticker</value>
+  </data>
+  <data name="Quotation" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="Fund" xml:space="preserve">
+    <value>Fund</value>
+  </data>
+  <data name="Fee" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="BeginDownladDataAsync" xml:space="preserve">
+    <value>{0} Info: Begin background query trade pair {2}'s {0} information... </value>
+  </data>
+  <data name="DownloadDataAsyncError" xml:space="preserve">
+    <value>{0} Info: Query {2}'s {0} info from exchange {1} error, Async error: {3}</value>
+  </data>
+  <data name="UpdateDataSuccess" xml:space="preserve">
+    <value>{0} Info: Query {2}'s {0} info from exchange {1} success.</value>
+  </data>
+  <data name="UpdateDataException" xml:space="preserve">
+    <value>{0} Info: Query {2}'s {0} info from exchange {1} has exception : {3}</value>
+  </data>
+  <data name="QueryDataSuccess" xml:space="preserve">
+    <value>{0} Info: Query {1}'s {0} info success.</value>
+  </data>
+  <data name="QueryDataException" xml:space="preserve">
+    <value>{0} Info: Query {1}'s {0} info has exception: {2}</value>
+  </data>
+  <data name="SubmitOrderSuccess" xml:space="preserve">
+    <value>Order Info: Submit order success, order id {1} ,feedback from {0}: {2}</value>
+  </data>
+  <data name="SumbitOrderFail" xml:space="preserve">
+    <value>Order Info: Submit order Fail, order id{1}, fail info:{2}</value>
+  </data>
+  <data name="SubmitOrderException" xml:space="preserve">
+    <value>Order Info: Submit order to{0} has exception: {1}</value>
+  </data>
+  <data name="CancelOrderSuccess" xml:space="preserve">
+    <value>Cancel Order Info: Cancel order id {1} from exchange {0} success.</value>
+  </data>
+  <data name="CancelOrderFail" xml:space="preserve">
+    <value>Cancel Order Info: Cancel order id {1} from exchange {0} Fail, info:{2}</value>
+  </data>
+  <data name="CancelOrderException" xml:space="preserve">
+    <value>Cancel Order Info: Cancel Order id {1} from exchange{0} has exception: {2}</value>
+  </data>
+  <data name="NoteNotSupportOpenOrders" xml:space="preserve">
+    <value>(Note: This Exchange Not Support Open Orders Query)</value>
+  </data>
+  <data name="OpenOrders" xml:space="preserve">
+    <value>Open Orders</value>
+  </data>
+  <data name="OrderSuccess" xml:space="preserve">
+    <value>Submit Order Success </value>
+  </data>
+  <data name="QueryFund" xml:space="preserve">
+    <value>Query Fund</value>
+  </data>
+  <data name="NoteStatusbar" xml:space="preserve">
+    <value>Please Note Status Bar, Information from Software Show Here.</value>
+  </data>
+  <data name="PairSelected" xml:space="preserve">
+    <value>Trade Pair Selected</value>
+  </data>
+  <data name="ConfigOtherOption" xml:space="preserve">
+    <value>Config Other Option</value>
+  </data>
+  <data name="PeriodType_AllTime" xml:space="preserve">
+    <value>All Time</value>
+  </data>
+  <data name="PeriodType_Days10" xml:space="preserve">
+    <value>10 Days</value>
+  </data>
+  <data name="PeriodType_Days2" xml:space="preserve">
+    <value>2 Days</value>
+  </data>
+  <data name="PeriodType_Days5" xml:space="preserve">
+    <value>5 Days</value>
+  </data>
+  <data name="PeriodType_Month1" xml:space="preserve">
+    <value>1 Month</value>
+  </data>
+  <data name="PeriodType_Months3" xml:space="preserve">
+    <value>3 Months</value>
+  </data>
+  <data name="PeriodType_Months6" xml:space="preserve">
+    <value>6 Months</value>
+  </data>
+  <data name="PeriodType_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="PeriodType_YearToDate" xml:space="preserve">
+    <value>Year To Date</value>
+  </data>
+  <data name="NoteChartEx" xml:space="preserve">
+    <value>Web Browser Issue, May can't view  Chart!</value>
+  </data>
+</root>

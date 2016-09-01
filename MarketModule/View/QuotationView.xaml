@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Eureka.CoinTrade.MarketModule.View.QuotationView"
+              ResxExtension.DefaultResxName="Eureka.CoinTrade.MarketModule.View.Resource" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:prism="http://www.codeplex.com/prism"
+             xmlns:local="clr-namespace:Eureka.CoinTrade.MarketModule.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600">
+    <StackPanel>
+    <local:TickerPanel DataContext="{Binding Quotation.Ticker}" />
+    <WrapPanel Margin="8,0">
+        <StackPanel>
+            <Label Content="{Resx _SellOrders}"></Label>
+            <local:OrdersView ItemsSource="{Binding Quotation.SellOrders}" />
+        </StackPanel>
+        <StackPanel>
+            <Label Content="{Resx _BuyOrders}"></Label>
+            <local:OrdersView ItemsSource="{Binding Quotation.BuyOrders}" />
+        </StackPanel>
+    </WrapPanel>
+        <Label Content="{Resx _TradeHistory}" />
+    <local:HistoryView ItemsSource="{Binding Quotation.History}" />
+    </StackPanel>
+</UserControl>

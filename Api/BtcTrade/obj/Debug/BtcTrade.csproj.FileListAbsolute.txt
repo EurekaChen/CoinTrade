@@ -1,0 +1,10 @@
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcTrade.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcTrade.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\Eureka.CoinTrade.Api.BtcTrade.dll
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\Eureka.CoinTrade.Api.BtcTrade.pdb
+E:\CloudDisk\Dropbox\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\BtcTrade.csprojResolveAssemblyReference.cache
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcTrade.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\CoinTrade\bin\Debug\Api\Eureka.CoinTrade.Api.BtcTrade.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\Eureka.CoinTrade.Api.BtcTrade.dll
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\Eureka.CoinTrade.Api.BtcTrade.pdb
+E:\CloudDisk\360\Eureka\Project\Coin\CoinTrade\Api\BtcTrade\obj\Debug\BtcTrade.csprojResolveAssemblyReference.cache

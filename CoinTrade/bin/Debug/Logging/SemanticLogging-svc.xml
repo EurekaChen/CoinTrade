@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns="http://schemas.microsoft.com/practices/2013/entlib/semanticlogging/etw"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://schemas.microsoft.com/practices/2013/entlib/semanticlogging/etw SemanticLogging-svc.xsd">
+  <traceEventService sessionNamePrefix="Eureka-CoinTrade"/>
+  <sinks>
+    <rollingFlatFileSink name="RollingFlatFileSink" fileName="RollingFlatFile.log" rollFileExistsBehavior="Increment">
+      <sources>      
+	      <eventSource name="Eureka-CoinTrade" level="Informational"/>
+      </sources>
+      
+      <customEventTextFormatter  type="Eureka.LogFormatter.PokerGuruEventTextFormatter, LogFormatter">
+        <parameters>
+          <parameter name="title" type="System.String" value="侦听日志"/>
+          <parameter name="dateTimeFormat" type="System.String" value="yyyy年MM月dd日 HH:mm:ss.fffffff"/>
+          <parameter name="isShowDetail" type="System.Boolean" value="false" />
+        </parameters>
+      </customEventTextFormatter>
+    </rollingFlatFileSink>
+    <consoleSink name="ConsoleEventSink">
+      <sources>      
+				<eventSource name="Eureka-CoinTrade"/>
+      </sources>
+      <customEventTextFormatter  type="Eureka.LogFormatter.PokerGuruEventTextFormatter, LogFormatter">
+      <parameters>
+        <parameter name="title" type="System.String" value="侦听日志"/>
+        <parameter name="dateTimeFormat" type="System.String" value="yyyy年MM月dd日 HH:mm:ss.fffffff"/>
+        <parameter name="isShowDetail" type="System.Boolean" value="false" />
+      </parameters>
+      </customEventTextFormatter>
+    </consoleSink>  
+  </sinks>
+</configuration>
